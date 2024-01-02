@@ -1,11 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import Card from './components/Card'
 
-function App() {
+const App = () => {
   return (
-    <>
-      Testing
-    </>
+    <div className='container'>
+      <Card />
+      <Card offset={1} zIndex={-2}/>
+      <Card offset={2} zIndex={-4}/>
+    </div>
   )
 }
 
