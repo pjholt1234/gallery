@@ -1,14 +1,8 @@
 import './App.css'
-import Card from './components/Card'
+import CarouselWrapper from "./components/Carousel/CarouselWrapper";
 
 const App = () => {
-  return (
-    <div className='container'>
-      <Card />
-      <Card offset={1} zIndex={-2}/>
-      <Card offset={2} zIndex={-4}/>
-    </div>
-  )
+  return <CarouselWrapper />
 }
 
 export default App

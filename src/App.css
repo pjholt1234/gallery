@@ -1,5 +1,6 @@
-@import './resources/css/card.css';
-@import './resources/css/container.css';
+@import './resources/css/Card.css';
+@import './resources/css/Carousel.css';
+@import './resources/css/Radio.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -19,5 +20,7 @@
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
+
 
