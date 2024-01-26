@@ -20,12 +20,13 @@ const Card:FC<CardProps> = ({title, body, cardPosition }) => {
             opacity: getCardOpacity(position, cardPosition)
         };
     };
-
-
+    
+    //todo add images
     return (
         <div className="card item" style={getItemStyle()}>
             <h2>{title}</h2>
             <p>{body}</p>
+            <img src={`https://placekitten.com/1000/100${cardPosition}` } alt={title} />
         </div>
     )
 }

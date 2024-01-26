@@ -24,13 +24,10 @@ const CarouselWrapper = () => {
             body: "Body 5"
         },
         {
-            title: "Title 6",
-            body: "Body 6"
+            title: "Title 5",
+            body: "Body 5"
         },
-        {
-            title: "Title 7",
-            body: "Body 7"
-        }
+
     ]
 
 
