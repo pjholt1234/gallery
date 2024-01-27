@@ -10,6 +10,14 @@
     width: 600px;
     background-color: #242424;
     overflow: hidden;
+    transition: all 0.25s linear;
+}
+
+.card_focused {
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    margin: 0 10px 0 10px;
 }
 
 .card img {

@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC, useState} from 'react';
 import {usePosition} from "../../hooks/UsePositionContext";
 
 interface CardProps {
@@ -8,6 +8,8 @@ interface CardProps {
 }
 
 const Card:FC<CardProps> = ({title, body, cardPosition }) => {
+    const [focused, setFocused] = useState(false);
+
     const {position} = usePosition();
 
     const getItemStyle = () => {
@@ -20,13 +22,19 @@ const Card:FC<CardProps> = ({title, body, cardPosition }) => {
             opacity: getCardOpacity(position, cardPosition)
         };
     };
-    
+
+    const toggleCardFocus = () => {
+        if(position != cardPosition) {
+            return;
+        }
+        setFocused(!focused);
+    }
+
+
     //todo add images
     return (
-        <div className="card item" style={getItemStyle()}>
-            <h2>{title}</h2>
-            <p>{body}</p>
-            <img src={`https://placekitten.com/1000/100${cardPosition}` } alt={title} />
+        <div className={`card ${focused ? 'card_focused' : 'item'}`} style={getItemStyle()}>
+            <img onClick={() => toggleCardFocus()} src={`https://placekitten.com/1000/100${cardPosition}`} className='button_focus' alt={title} />
         </div>
     )
 }
