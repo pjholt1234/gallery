@@ -2,6 +2,7 @@ import Card from "./Card";
 import {usePosition} from "../../hooks/UsePositionContext";
 import {FC} from "react";
 import RadioWrapper from "./RadioWrapper";
+
 interface CarouselProps {
     items: Array<{ title: string; body: string }>;
 }
@@ -13,6 +14,7 @@ const Carousel: FC<CarouselProps> = ({items}) => {
         if(position === 1) {
             return;
         }
+
         setPosition(position - 1);
     };
 
@@ -33,7 +35,6 @@ const Carousel: FC<CarouselProps> = ({items}) => {
                 })}
             </main>
             {position < items.length ? <div className="clickable-area clickable-area_right" onClick={handleNextClick}></div> : null}
-
             <RadioWrapper count={items.length} />
         </div>
     );

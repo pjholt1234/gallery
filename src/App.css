@@ -2,6 +2,7 @@
 @import './resources/css/Carousel.css';
 @import './resources/css/Radio.css';
 @import './resources/css/Grid.css';
+@import './resources/css/Title.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,6 +17,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body > #root > div {
+  height: 100vh;
 }
 
 body {

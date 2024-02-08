@@ -6,11 +6,25 @@
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    height: 700px;
-    width: 600px;
+    height: 600px;
+    width: 400px;
     background-color: #242424;
     overflow: hidden;
     transition: all 0.25s linear;
+}
+
+@media only screen and (max-width: 767px) {
+    .card {
+        height: 500px;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
 }
 
 .card_focused {
