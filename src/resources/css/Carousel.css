@@ -44,7 +44,13 @@ div.item {
     pointer-events: all;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 575px) {
+    .carousel{
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     main#carousel {
         height: 70vh;
         perspective: 300px;
