@@ -26,9 +26,11 @@ const Carousel: FC<CarouselProps> = ({items}) => {
         setPosition(position + 1);
     };
 
+
     return (
         <div className='carousel'>
             {position > 1 ? <div className="clickable-area clickable-area_left" onClick={handlePrevClick}></div> : null}
+            {/* @ts-expect-error - TS complains about position being used as a CSS variable, but it's fine*/}
             <main id="carousel" style={{ '--position': position }}>
                 {items.map((item, index) => {
                     return <Card key={index} title={item.title} src={item.src} cardPosition={index + 1}/>

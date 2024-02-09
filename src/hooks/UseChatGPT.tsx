@@ -49,6 +49,7 @@ const useChatGPT = (): ChatGPTResponse => {
 
             setResponse(responseData);
         } catch (error) {
+            //@ts-ignore
             setError(error.message);
         } finally {
             setIsLoading(false);
