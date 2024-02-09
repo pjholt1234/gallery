@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function useCurrentBreakpoint(): string {
+function UseCurrentBreakpoint(): string {
     const [currentBreakpoint, setCurrentBreakpoint] = useState<string>(() => getCurrentBreakpoint());
 
     useEffect(() => {
@@ -33,7 +33,7 @@ function getCurrentBreakpoint(): string {
     }
 }
 
-export { useCurrentBreakpoint };
+export { UseCurrentBreakpoint };
 
 const Breakpoint = {
     XS: 0,
