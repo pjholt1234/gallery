@@ -3,6 +3,7 @@
 @import './resources/css/Radio.css';
 @import './resources/css/Grid.css';
 @import './resources/css/Title.css';
+@import './resources/css/Description.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

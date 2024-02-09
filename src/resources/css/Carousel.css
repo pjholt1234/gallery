@@ -50,8 +50,8 @@ div.item {
         perspective: 300px;
     }
 
-    .clickable-area {
-        display: none !important;
+    .clickable-area_left{
+        left: 0;
     }
 
     .carousel {
@@ -62,6 +62,9 @@ div.item {
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     main#carousel {
         height: 70vh;
+    }
+    .clickable-area_left{
+        left: 0;
     }
 
     .carousel {

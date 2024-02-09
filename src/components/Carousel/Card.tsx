@@ -3,11 +3,11 @@ import {usePosition} from "../../hooks/UsePositionContext";
 
 interface CardProps {
     title: string;
-    body: string;
     cardPosition: number;
+    src: string
 }
 
-const Card:FC<CardProps> = ({title, body, cardPosition }) => {
+const Card:FC<CardProps> = ({title, cardPosition, src }) => {
     const [focused, setFocused] = useState(false);
 
     const {position} = usePosition();
@@ -30,11 +30,9 @@ const Card:FC<CardProps> = ({title, body, cardPosition }) => {
         setFocused(!focused);
     }
 
-
-    //todo add images
     return (
         <div className={`card ${focused ? 'card_focused' : 'item'}`} style={getItemStyle()}>
-            <img onClick={() => toggleCardFocus()} src={`https://placekitten.com/1000/100${cardPosition}`} className='button_focus' alt={title} />
+            <img onClick={() => toggleCardFocus()} src={src} className='button_focus' alt={title} />
         </div>
     )
 }
