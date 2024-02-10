@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {usePosition} from "../../hooks/UsePositionContext";
+import {usePosition} from "../hooks/UsePositionContext";
 
 interface TitleProps {
     items: Array<{ title: string; body: string; src: string; }>

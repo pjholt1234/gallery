@@ -1,4 +1,4 @@
-import {usePosition} from "../../hooks/UsePositionContext";
+import {usePosition} from "../hooks/UsePositionContext";
 import {FC} from "react";
 
 interface DescriptionProps {
