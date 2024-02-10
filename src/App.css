@@ -4,6 +4,7 @@
 @import './resources/css/Grid.css';
 @import './resources/css/Title.css';
 @import './resources/css/Description.css';
+@import './resources/css/MobileCard.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -35,4 +36,9 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 575px) {
+  .infoWrapper {
+    display: none;
+  }
+}
 
