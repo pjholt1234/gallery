@@ -1,4 +1,4 @@
-import {FC, useState} from 'react';
+import React, {FC, useState} from 'react';
 import MobileCard from "./MobileCard";
 
 interface MobileCardWrapperProps {
@@ -13,12 +13,12 @@ const MobileCardWrapper: FC<MobileCardWrapperProps> = ({ items }) => {
         <MobileCard key={index} item={item} />
     ));
 
-    const handleTouchStart = (e) => {
+    const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
         touchStartX = e.touches[0].clientX;
     };
 
 
-    const handleTouchMove = (e) => {
+    const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
         const touchEndX = e.touches[0].clientX;
         const deltaX = touchEndX - touchStartX;
 
