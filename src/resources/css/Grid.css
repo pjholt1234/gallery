@@ -1,4 +1,4 @@
-.grid-container {
+.gridContainer {
     height: 100%;
     display: grid;
     grid-template-columns: 4fr 6fr;
@@ -9,13 +9,13 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .grid-container {
+    .gridContainer {
         grid-template-columns: 1fr;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .grid-container {
+    .gridContainer {
         grid-template-columns: 1fr;
     }
 }
