@@ -4,7 +4,7 @@ import Title from "./components/Title";
 import Carousel from "./components/Carousel/Carousel";
 import Description from "./components/Description";
 import {items} from "./data/items";
-import MobileCard from "./components/MobileCard/MobileCard";
+import MobileCardWrapper from "./components/MobileCard/MobileCardWrapper";
 
 const App = () => {
     return (
@@ -15,7 +15,7 @@ const App = () => {
                   <Description items={items} />
               </div>
             <Carousel items={items}/>
-            <MobileCard item={items[0]}/>
+            <MobileCardWrapper items={items} />
           </PositionProvider>
       </div>
     )

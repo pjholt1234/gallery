@@ -4,6 +4,10 @@
     height: 100%;
 }
 
+.mobileCard__container {
+    display: none;
+}
+
 .mobileCard__title {
     font-size: 1.5rem;
     font-weight: 700;
@@ -17,6 +21,9 @@
     width: auto;
     margin: 1rem;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobileCard__img {
@@ -41,6 +48,11 @@
 
 @media only screen and (max-width: 575px) {
     .mobileCard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileCard__container {
         display: flex;
         flex-direction: column;
     }
