@@ -12,14 +12,14 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    margin: 1rem;
+    margin: 10px;
 }
 
 .mobileCard__img-container {
     height: 50%;
     background-color: white;
     width: auto;
-    margin: 1rem;
+    margin: 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -29,12 +29,13 @@
 .mobileCard__img {
     max-width: 100%;
     height: auto;
+    max-height: 100%;
     object-fit: contain;
     border-radius: 5px;
 }
 
 .mobileCard__description {
-    margin: 1rem;
+    margin: 10px;
     width: auto;
     height: 100%;
     font-size: 1rem;
