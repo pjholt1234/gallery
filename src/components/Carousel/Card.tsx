@@ -1,4 +1,4 @@
-import {FC, useState} from 'react';
+import {FC, useEffect, useState} from 'react';
 import {usePosition} from "../../hooks/UsePositionContext";
 
 interface CardProps {
@@ -11,6 +11,10 @@ const Card:FC<CardProps> = ({title, cardPosition, src }) => {
     const [focused, setFocused] = useState(false);
 
     const {position} = usePosition();
+
+    useEffect(() => {
+        setFocused(false);
+    }, [position]);
 
     const getItemStyle = () => {
         const r = position - cardPosition;
