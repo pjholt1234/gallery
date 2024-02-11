@@ -36,7 +36,7 @@ const MobileCardWrapper: FC<MobileCardWrapperProps> = ({ items }) => {
             onTouchMove={handleTouchMove}
             style={{ overflowX: 'hidden' }}
         >
-            <div>{cards[currentIndex]}</div>
+            {cards[currentIndex]}
         </div>
     );
 };
