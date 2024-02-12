@@ -27,7 +27,11 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    .card {
+        height: 500px;
+        width: 300px;
+    }
 }
 
 .card_focused {
