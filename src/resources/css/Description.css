@@ -4,6 +4,27 @@
     height: 10rem;
 }
 
+.description__slideIn {
+    overflow: hidden;
+}
+
+.description__slideIn {
+    animation: description__slideIn 1s forwards;
+    animation-delay: 250ms;
+    opacity: 0;
+}
+
+@keyframes description__slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 575px) {
     .description {
         display: none;
